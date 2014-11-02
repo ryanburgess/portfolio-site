@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files:{
-          'js/project-min.js': ['js/project.js']
+          'js/rb.min.js': ['js/rb.js']
         },
       }
     },
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: 'js/**/*.js',
-        tasks: ['newer:browserify', 'uglify'],
+        tasks: ['newer:uglify'],
         options: {
           spawn: false,
           livereload: true
