@@ -34,6 +34,11 @@ module.exports = function(grunt) {
         },
       }
     },
+    jsonlint: {
+      sample: {
+        src: [ 'content/**/*.json' ]
+      }
+    },
     imagemin: {
       static: {
         options: {
@@ -108,6 +113,13 @@ module.exports = function(grunt) {
           spawn: false,
         }
       }
+      json: {
+        files: ['content/**/*.json'],
+        tasks: ['newer:jsonlint'],
+        options: {
+          spawn: false
+        }
+      },
     }
   });
   grunt.loadNpmTasks('grunt-sass');
@@ -117,5 +129,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-jsonlint');
   grunt.registerTask('default',['watch']);
 };
