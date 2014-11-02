@@ -1,0 +1,23 @@
+.project{
+  position:relative;
+  img{
+    @include rem("margin-top", 30);
+    @include rem("margin-bottom", 30);
+    max-width:700px;
+    @extend %marginAuto;
+    display:block;
+  }
+  .js-show-all{
+    font-family:$headingFont;
+    text-transform:uppercase;
+    position:absolute;
+    @include rem("right", 20);
+    @include rem("top", 10);
+    color:$darkerGrey;
+    text-decoration:none;
+
+    &:hover, &:hover{
+      color:lighten($darkGrey, 20%);
+    }
+  }
+}

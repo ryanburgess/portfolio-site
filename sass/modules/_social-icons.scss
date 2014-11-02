@@ -1,0 +1,30 @@
+.social{
+  position:absolute;
+  right:0;
+  top:0;
+
+  li{
+    @extend %inlineBlock;
+    @include rem("margin", 0, 5);
+
+    a{
+      @extend %hideText;
+      width:30px;
+      height:30px;
+
+      @include breakpoint($mobile){
+        width:20px;
+        height:20px;
+      }
+    }
+    .twitter{
+      content:url(/img/twitter.min.svg);
+    }
+    .github{
+      content:url(/img/github.min.svg);
+    }
+    .linkedin{
+      content:url(/img/linkedin.min.svg);
+    }
+  }
+}
