@@ -125,7 +125,8 @@
 
         var title = projects[i].title,
           description = projects[i].description,
-          images = projects[i].images;
+          images = projects[i].images,
+          classSize = projects[i].classes;
 
         if(title === projectName){
           pageHtml += '<h2>' + title + '</h2>';
@@ -136,11 +137,12 @@
           }
 
           for (var b = 0; b < images.length; b++){
-            var image = images[b];
-            // if(isRetina){
-            //   image = image.replace('.jpg', '@2x.jpg');
-            // }
-            pageHtml += '<img src="img/projects/large/'+ image +'" alt="'+ title +' screenshot '+ b +'">';
+            var image = images[b],
+              classImage = classSize[b];
+            if(isRetina){
+              image = image.replace('.jpg', '@2x.jpg');
+            }
+            pageHtml += '<img src="img/projects/large/'+ image +'" class="'+ classImage +'" alt="'+ title +' screenshot '+ b +'">';
           }
         }
     }
