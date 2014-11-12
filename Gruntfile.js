@@ -112,7 +112,7 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
         }
-      }
+      },
       json: {
         files: ['content/**/*.json'],
         tasks: ['newer:jsonlint'],
