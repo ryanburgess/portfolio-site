@@ -21,7 +21,7 @@
 
   $.ajax({
     type: 'POST',
-    url: 'content/content.json',
+    url: 'content/content.min.json',
     dataType: 'json',
     cache: false,
     success: function(data){
