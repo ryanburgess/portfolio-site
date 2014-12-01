@@ -16,6 +16,10 @@
         width:20px;
         height:20px;
       }
+
+      &:hover, &:focus{
+        @include opacity(.5);
+      }
     }
     .twitter{
       content:url(/img/twitter.min.svg);
