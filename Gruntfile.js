@@ -57,6 +57,14 @@ module.exports = function(grunt) {
         }]
       }
     },
+    'json-pretty': {
+      options: {
+        files: 'content/',
+        indent: 4,
+        minify:true,
+        append:'.min'
+      },
+    },
     svgmin: {                       // Task
         options: {                  // Configuration that will be passed directly to SVGO
           plugins: [{
@@ -126,6 +134,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-json-pretty');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-svgmin');
