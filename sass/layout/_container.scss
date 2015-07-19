@@ -4,6 +4,7 @@
   @include rem("margin-bottom", 60);
   @include roundedCorners(10);
   color:$darkGrey;
+  position: relative;
 
   h2{
     font-family:$headingFont;
