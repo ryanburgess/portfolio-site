@@ -11,5 +11,5 @@ app.get('/', require('./routes').index);
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
-  console.log('Ryan Burgess listening on port ' + port);
+  console.log('Ryan Burgess portfolio listening on port ' + port);
 });
