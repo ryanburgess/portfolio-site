@@ -7,7 +7,7 @@ var about = React.createClass({
   render: function() {
 
     return (
-      <DefaultLayout title={this.props.title}>
+      <DefaultLayout title={this.props.title} description={this.props.description}>
         <DefaultHeader>
         </DefaultHeader>
         <div className='container row'>
