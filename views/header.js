@@ -5,7 +5,7 @@ var DefaultHeader = React.createClass({
     return (
       <header className='row'>
         <a href='/'>
-          <h1>Ryan Burgess</h1>
+          <h1>{this.props.title}</h1>
           <span className='image'></span>
         </a>
       </header>
