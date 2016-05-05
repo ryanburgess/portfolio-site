@@ -23,5 +23,15 @@
     @include rem("font-size", 16);
     @include rem("line-height", 20);
     @include rem("margin-bottom", 15);
+
+    a{
+      color: $darkGrey;
+      text-decoration: none;
+      border-bottom: 1px solid $darkGrey;
+
+      &:hover, &:focus{
+        border: none;
+      }
+    }
   }
 }
