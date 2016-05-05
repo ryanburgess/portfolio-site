@@ -7,7 +7,6 @@ module.exports = function social() {
   let content = '';
 
   for (const socialLinks of social) {
-    console.log(socialLinks.title)
     content += `<li><a href="${socialLinks.url}" class="${socialLinks.class}">${socialLinks.title}</a></li>`;
   }
 
