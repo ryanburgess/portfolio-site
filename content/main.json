@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Ryan Burgess",
+    "desc": "Ryan Burgess is a Manager, UI Engineering at Netflix in California.",
+    "about": ["Ryan Burgess is a Manager, UI Engineering at Netflix in California. Throughout his years of experience he has obtained a great deal of knowledge working for internal and external clients delivering web and mobile applications. He has a extensive experience working with HTML5, CSS3, SASS, LESS, Responsive Design, JavaScript, NodeJS, ReactJS, AngularJS, BackboneJS, JQuery, Mobile, PHP, MySQL, ActionScript 3 and the Adobe Creative Suite."],
+    "ga": "UA-2870066-4",
+    "social":[
+      {
+        "title": "Github",
+        "url": "https://github.com/ryanburgess",
+        "class": "github"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/burgessdryan",
+        "class": "twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ryanburgess",
+        "class": "linkedin"
+      }
+    ]
+  }
+]
